@@ -1,0 +1,9 @@
+type Shop {
+   name: String! @unique
+   accessToken: String!
+}
+
+type Query {
+  allShops: [Shop!]
+  shopByName(name: String!): Shop!
+}
